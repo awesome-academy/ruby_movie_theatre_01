@@ -1,0 +1,144 @@
+@import 'bootstrap';
+
+* {
+  margin:0;
+  padding:0;
+}
+html, body {
+  min-width:940px;
+}
+body {
+  background:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:100%;
+  line-height:1em;
+  color:#858585;
+}
+img {
+  border:0;
+  vertical-align:top;
+  text-align:left;
+}
+ul, ol {
+  list-style:none;
+}
+#main {
+  width:940px;
+  margin:0 auto;
+  font-size:0.875em;
+}
+#header {
+  height:171px;
+  margin-bottom:-8px;
+}
+.fleft {
+  float:left;
+  font-weight: bold;
+}
+#header .row-1 {
+  height:112px;
+  width:100%;
+  overflow:hidden;
+}
+#header .row-1 .fleft {
+  font-size:40px;
+  line-height:1.2em;
+  padding:26px 0 0 47px;
+}
+#header .row-1 .fleft a {
+  text-decoration:none;
+}
+#header .row-1 ul {
+  padding:49px 10px;
+  float:right;
+}
+#header .row-1 ul li {
+  float:left;
+  padding-left:35px;
+}
+#header .row-2 {
+  height:51px;
+}
+#header .row-2 ul {
+  width:100%;
+  overflow:hidden;
+}
+#header .row-2 ul li {
+  float:left;
+  font-size:20px;
+  line-height:2.4em;
+  margin-right:5px;
+  background-color:#000;
+}
+#header .row-2 ul li.last {
+  margin-right:0;
+}
+#header .row-2 ul li a {
+  text-decoration:none;
+  color:#f0f0f0;
+  width:184px;
+  height:56px;
+  float:left;
+  background: image-url("nav-bg.gif");
+  background-repeat:no-repeat;
+  background-position:0 0;
+  text-align:center;
+}
+#header .row-2 ul li a:hover, #header .row-2 ul li a.active {
+  color:#d72a18;
+  background: image-url("nav-act.gif");
+}
+
+#footer {
+  background: image-url("footer-tail.gif") repeat-x left top #bfbfbf;
+  color:#1d1d1d;
+  font-size:.86em;
+  line-height:1.667em;
+  text-align:center;
+}
+#footer .left {
+  background: image-url("footer-left.gif") no-repeat left top;
+}
+#footer .right {
+  min-height:89px;
+  height:auto !important;
+  height:89px;
+  background: image-url("footer-right.gif") no-repeat right top;
+  text-align:center;
+}
+#footer .footerlink {
+  padding:35px 25px;
+}
+.footerlink p {
+  margin:0;
+  padding:0;
+  line-height:normal;
+  white-space:nowrap;
+  text-indent:inherit;
+  color:#1d1d1d;
+}
+.footerlink a {
+  color:#1d1d1d;
+  font-weight:normal;
+  margin:0;
+  padding:0;
+  border:none;
+  text-decoration:underline;
+  background-color:transparent;
+}
+.footerlink a:hover {
+  color:#1d1d1d;
+  background-color:transparent;
+  text-decoration:none;
+}
+.footerlink .lf {
+  float:left;
+}
+.footerlink .rf {
+  float:right;
+}
+.taq {
+  color: red;
+  font-size: 50px;
+  font-style: italic;
+}
