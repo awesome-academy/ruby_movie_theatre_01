@@ -1,0 +1,26 @@
+vi:
+  static_pages:
+    home:
+      home: Trang chủ
+    movie:
+      movie: Phim
+    fare:
+      fare: Giá vé
+    about:
+      about: Rạp
+    news:
+      news: Tin tức
+  layouts:
+    header:
+      login: Đăng nhập
+      signin: Đăng kí
+      language: Ngôn ngữ
+      home: Trang chủ
+      movie: Phim
+      cine: Rạp
+      fare: Giá vé
+      news: Tin tức
+    footer:
+      copy: Bản quyền SiteName - Tất cả các quyền
+      redesign: Thiết kế lại bởi PQV
+  vhkcine: Việt Hoàng Kim Cineplex

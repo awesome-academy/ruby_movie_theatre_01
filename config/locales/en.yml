@@ -1,1 +1,26 @@
 en:
+  static_pages:
+    home:
+      home: Home
+    movie:
+      movie: Movies
+    fare:
+      fare: Fare
+    about:
+      about: About
+    news:
+      news: News
+  layouts:
+    header:
+      login: Login
+      signin: Sign in
+      language: Language
+      home: Home
+      movie: Movie
+      cine: Theaters
+      fare: Ticket price
+      news: News
+    footer:
+      copy: Copyright SiteName - All Rights Reserved
+      redesign: Redesign by PQV
+  vhkcine: Việt Hoàng Kim Cineplex
