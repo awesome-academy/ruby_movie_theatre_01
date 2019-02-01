@@ -2,5 +2,104 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <div class="tail-top">
+      <div class="tail-bottom">
+        <div id="main">
+          <div id="content">
+            <div id="slogan">
+              <div class="image png"></div>
+              <div class="inside">
+                <h2><span><%= t ".please_come_us" %></span></h2>
+                <p><%= t ".the_happiest" %></p>
+              </div>
+            </div>
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="300">
+              <ol class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="box">
+                    <div class="border-right">
+                      <div class="border-left">
+                        <div class="inner">
+                          <h3><%= t ".welcome_to" %> 
+                            <b><span><%= t ".vhk_cineplex" %></span></b>
+                          </h3>
+                          <p><%= t ".when_u_come" %></p>
+                        
+                          <div class="img-box1"><%= image_tag("1page-img1.jpg", alt: "") %>
+                            <%= t ".leading_trend" %> 
+                          </div>
+                          <p><%= t ".experience" %><br><b><%= t ".why_not" %></b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("cua-lai-vo-bau3.jpg", alt: "", :class => "drop_img_crs") %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("tro_ly.jpg", alt: "", :class => "drop_img_crs") %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("dragon_3.jpg", alt: "", :class => "drop_img_crs") %>
+                </div>
+              </div>
+              <%= link_to "#demo", class: "carousel-control-prev", 
+                role: "button", data: {slide: "prev"} do %>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              <% end %>
+              <%= link_to "#demo", class: "carousel-control-next", 
+                role: "button", data: {slide: "next"} do %>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              <% end %>
+            </div>
+            <div class="content">
+              <h3><span><%= t ".lastest_movies" %></span></h3>
+              <ul class="movies">
+                <li>
+                  <h4>Toy Story 3</h4>
+                  <%= image_tag("1page-img2.jpg", alt: "") %>
+                  <p><%= t ".toy_des" %></p>
+                  <div class="wrapper">
+                    <%= link_to "#", class: "link2" do %>
+                      <span><span><%= t ".read_more" %></span></span>
+                    <% end %>
+                  </div>
+                </li>
+                <li>
+                  <h4>Prince of Percia: Sands of Time</h4>
+                  <%= image_tag("1page-img3.jpg", alt: "") %>
+                  <p><%= t ".sand_des" %></p>
+                  <div class="wrapper">
+                    <%= link_to "#", class: "link2" do %>
+                      <span><span><%= t ".read_more" %></span></span>
+                    <% end %>
+                  </div>
+                </li>
+                <li class="last">
+                  <h4>The Twilight Saga: Eclipse</h4>
+                  <%= image_tag("1page-img4.jpg", alt: "") %>
+                  <p><%= t ".vam_des" %></p>
+                  <div class="wrapper">
+                    <%= link_to "#", class: "link2" do %>
+                      <span><span><%= t ".read_more" %></span></span>
+                    <% end %>
+                  </div>
+                </li>
+                <li class="clear">&nbsp;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
