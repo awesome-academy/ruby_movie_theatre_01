@@ -17,18 +17,10 @@ en:
       vam_des: "Bella is about to graduate and she will have to make the most difficult decision of her life will choose Edward or Jacob. This choice may recall the hundreds of years of feud between werewolves and Vampires. At this moment, the appearance of bloodthirsty vampire Victoria has made the story turn to another direction."
       sand_des: "Sands of Time is a story about Dastan, a boy who wandered on the Persian street in the 6th century. The king adopted him as a result of the imposing ambition from Dastan."
       toy_des: "At the beginning of the film, to avoid being thrown to the landfill after he mastered Andy to go to college, Buzz and his group of toy friends tried to sneak into the box to be taken to Sunnyside kindergarten to be used forever."
-    movie:
-      movie: Movies
-    fare:
-      fare: Fare
-    about:
-      about: About
-    news:
-      news: News
   layouts:
     header:
       login: Login
-      signin: Sign in
+      signup: Sign up
       language: Language
       home: Home
       movie: Movie
@@ -38,4 +30,14 @@ en:
     footer:
       copy: Copyright SiteName - All Rights Reserved
       redesign: Redesign by PQV
+  user:
+    new:
+      sign_up: Sign up
+      name: Name
+      pass: Password
+      pass_confirm: Password confirmation
+      form_contains: "The form contains"
+      err: "errors"
   vhkcine: Việt Hoàng Kim Cineplex
+  signup_success: Registration success. Welcome to our movie theater.
+  signup_fail: Error! Registration failed.

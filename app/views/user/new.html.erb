@@ -1,0 +1,36 @@
+<% provide :title, t(".sign_up") %>
+<div id= "main">
+  <div class="row pt-4 pb-5">
+    <h3 class="m-auto"><%= t ".sign_up" %></h3>
+  </div>
+  <div class="row">
+    <%= form_with model: @user, url: signup_path, class: "col-12", local: true do |f| %>
+      <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <div class="alert alert-danger">
+            <%= t ".form_contains" %> <%= pluralize @user.errors.count, t(".err") %>.
+          </div>
+          <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <%= f.label :name, t(".name") %>
+      <%= f.text_field :name, class: "form-control" %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :password, t(".pass") %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :password_confirmation, t(".pass_confirm") %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+
+      <%= f.submit t(".sign_up"), class: "btn btn-primary mt-3 mb-5" %>
+    <% end %>    
+  </div>
+</div>
