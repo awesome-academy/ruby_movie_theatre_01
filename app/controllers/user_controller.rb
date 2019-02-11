@@ -5,7 +5,7 @@ class UserController < ApplicationController
 
   def create
     @user = User.new user_params
-    
+
     if @user.save
       flash[:success] = t "signup_success"
       redirect_to root_path

@@ -35,6 +35,9 @@ vi:
       cine: Rạp
       fare: Giá vé
       news: Tin tức
+      profile: Thông tin
+      setting: Cài đặt
+      log_out: Đăng xuất
     footer:
       copy: Bản quyền SiteName - Tất cả các quyền
       redesign: Thiết kế lại bởi PQV
@@ -46,6 +49,15 @@ vi:
       pass_confirm: Mật khẩu xác nhận
       form_contains: "Nội dung đăng kí có"
       err: "lỗi"
+  sessions:
+    new:
+      pass: "Mật khẩu"
+      new_user: "Tạo tài khoản mới? "
+      log_in: Đăng nhập
+      remember_me: Ghi nhớ tài khoản
+      sign_up_now: Đăng kí ngay!!
   vhkcine: Việt Hoàng Kim Cineplex
   signup_success: Đăng kí thành công. Chào mừng đến với rạp phim của chúng tôi.
   signup_fail: Lỗi! Đăng kí thất bại.
+  login_successful: Đăng nhập thành công!
+  invalid_email_password: Email hoặc mật khẩu không đúng!!
