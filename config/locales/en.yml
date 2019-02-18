@@ -27,6 +27,9 @@ en:
       cine: Theaters
       fare: Ticket price
       news: News
+      profile: Profile
+      setting: Setting
+      log_out: Log out
     footer:
       copy: Copyright SiteName - All Rights Reserved
       redesign: Redesign by PQV
@@ -38,6 +41,15 @@ en:
       pass_confirm: Password confirmation
       form_contains: "The form contains"
       err: "errors"
+  sessions:
+    new:
+      pass: "Password"
+      new_user: "New user? "
+      log_in: Login
+      remember_me: Remember me on this computer
+      sign_up_now: Signup now!!
   vhkcine: Việt Hoàng Kim Cineplex
   signup_success: Registration success. Welcome to our movie theater.
   signup_fail: Error! Registration failed.
+  login_successful: Logged in successfully!
+  invalid_email_password: Email or password is incorrect!!

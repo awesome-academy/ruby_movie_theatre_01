@@ -130,6 +130,7 @@ ul, ol {
   margin:-10px 20px 0 0;
 }
 p {
+  padding-left: 15px;
   margin-bottom:15px;
   line-height:1.714em;
 }
@@ -259,7 +260,7 @@ h4 {
 #header .row-1 .fleft a {
   text-decoration:none;
 }
-#header .row-1 ul {
+#header .row-1 > ul {
   padding:45px 10px;
   float:right;
 }
