@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
-  SIGNUP_PARAMS = %i(name email password password_confirmation).freeze
+  PHONENUMBER_REGEX = /[0-9]{3}-[0-9]{3}-[0-9]{4}/
+  SIGNUP_PARAMS = %i(name email phone password password_confirmation).freeze
   attr_accessor :remember_token
   has_many :schedules, through: :tickets
   has_many :tickets
@@ -13,6 +14,8 @@ class User < ApplicationRecord
   validates :password, presence: true,
     allow_nil: true,
     length: {minimum: Settings.min_length_password}
+  validates :phone, format: { with: PHONENUMBER_REGEX },
+    length: {maximum: Settings.max_length_phonenumber} 
   has_secure_password
   before_save :downcase_email
 
@@ -38,6 +41,10 @@ class User < ApplicationRecord
 
   def forget
     update remember_digest: nil
+  end
+
+  def current_user? current_user
+    self == current_user
   end
 
   def authenticated? attribute, token

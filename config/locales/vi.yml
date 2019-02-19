@@ -38,17 +38,33 @@ vi:
       profile: Thông tin
       setting: Cài đặt
       log_out: Đăng xuất
+      account: Tài khoản
     footer:
       copy: Bản quyền SiteName - Tất cả các quyền
       redesign: Thiết kế lại bởi PQV
-  user:
+  users:
+    update_success: Cập nhật thành công
+    please_login: Hãy đăng nhập.
+    edit_fail: Đã xảy ra lỗi
+    notice_show: "Không tìm thấy người dùng có id này. Hãy đăng kí tài khoản mới!"
     new:
       sign_up: Đăng kí
       name: Tên
       pass: Mật khẩu
       pass_confirm: Mật khẩu xác nhận
-      form_contains: "Nội dung đăng kí có"
+    edit:
+      edit_user: Chỉnh sửa tài khoản
+      update_pf: Cập nhật thông tin của bạn
+      save_change: Lưu thay đổi
+    form:
+      name: Tên
+      phone: Số điện thoại
+      pass: Mật khẩu
+      pass_confirm: Xác nhận mật khẩu
+  shared:
+    error_messages:
       err: "lỗi"
+      form_contains: "Nội dung đăng kí có"
   sessions:
     new:
       pass: "Mật khẩu"

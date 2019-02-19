@@ -2,3 +2,4 @@ max_length_name: 50
 max_length_email: 250
 min_length_password: 6
 remember_me: 1
+max_length_phonenumber: 13

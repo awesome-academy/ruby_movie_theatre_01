@@ -18,14 +18,14 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     redirect_to root_url
   end
-  
+
   private
-  
+
   def remember_login user
     log_in @user
     flash[:success] = t "login_successful"
     rmb = params[:session][:remember_me]
     rmb == Settings.remember_me ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 end
