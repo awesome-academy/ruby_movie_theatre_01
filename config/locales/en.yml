@@ -30,15 +30,31 @@ en:
       profile: Profile
       setting: Setting
       log_out: Log out
+      account: Account
     footer:
       copy: Copyright SiteName - All Rights Reserved
       redesign: Redesign by PQV
-  user:
+  users:
+    update_success: "Update success"
+    please_login: Please log in.
+    edit_fail: Have something errors
+    notice_show: "Could not find user with this id. Sign up new user please!"
     new:
       sign_up: Sign up
       name: Name
       pass: Password
       pass_confirm: Password confirmation
+    edit:
+      edit_user: Edit user
+      update_pf: Update your profile
+      save_change: Save changes
+    form:
+      name: Name
+      phone: Phone
+      pass: Password
+      pass_confirm: Password confirm
+  shared:
+    error_messages:
       form_contains: "The form contains"
       err: "errors"
   sessions:
