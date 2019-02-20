@@ -1,7 +1,7 @@
-class FilmsController < ApplicationController
+class Admin::FilmsController < ApplicationController
   before_action :load_film, only: %i(show edit update destroy)
-  before_action :logged_in_user, except: %i(index show)
-  before_action :admin_user, only: %i(edit update destroy)
+  before_action :logged_in_user
+  before_action :admin_user, only: %i(new edit update destroy)
   before_action :support
 
   def new
@@ -42,6 +42,7 @@ class FilmsController < ApplicationController
       flash[:danger] = t ".film_del_fail"
     end
   end
+
   private
 
   def film_params

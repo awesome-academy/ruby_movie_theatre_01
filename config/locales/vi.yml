@@ -72,28 +72,30 @@ vi:
       phone: Số điện thoại
       pass: Mật khẩu
       pass_confirm: Xác nhận mật khẩu
+  admin:
+    films:
+      add_film_successful: Thêm phim thành công
+      add_film_failure: Thêm phim thất bại
+      film_update_successful: Cập nhật phim thành công
+      film_update_failure: Cập nhật phim thất bại
+      film_del: Đã xóa phim
+      film_del_fail: Xóa phim thất bại
+      film_not_found: Không tìm thấy phim
+      new:
+        add_film: Thêm phim
+        save_film: Lưu phim
+      edit:
+        edit_film: Chỉnh sửa phim
+        save_change: Lưu thay đổi
+      form:
+        name: Tên
+        type: Loại phim
+        description: Mô tả
+        present: Trình chiếu
+        image: Ảnh poster
+        trailer: Trailer
+        status: Tình trạng
   films:
-    add_film_successful: Thêm phim thành công
-    add_film_failure: Thêm phim thất bại
-    film_update_successful: Cập nhật phim thành công
-    film_update_failure: Cập nhật phim thất bại
-    film_del: Đã xóa phim
-    film_del_fail: Xóa phim thất bại
-    film_not_found: Không tìm thấy phim
-    new:
-      add_film: Thêm phim
-      save_film: Lưu phim
-    edit:
-      edit_film: Chỉnh sửa phim
-      save_change: Lưu thay đổi
-    form:
-      name: Tên
-      type: Loại phim
-      description: Mô tả
-      present: Trình chiếu
-      image: Ảnh poster
-      trailer: Trailer
-      status: Tình trạng
     index:
       film: Phim
   shared:

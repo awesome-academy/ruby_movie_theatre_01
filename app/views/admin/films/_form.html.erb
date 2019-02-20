@@ -1,0 +1,26 @@
+<%= form_with model: [:admin, @film], class: "col-12", local: true do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.label :name, t(".name") %>
+  <%= f.text_field :name, class: "form-control mt-1 mb-2" %>
+
+  <%= f.label :type_films, t(".type") %>
+  <%= f.select :type_films, options_for_select(@supports.type_file), class: "form-control mt-1 mb-2" %></br>
+
+  <%= f.label :description, t(".description") %>
+  <%= f.text_field :description, class: "form-control mt-1 mb-2" %>
+
+  <%= f.label :present, t(".present") %>
+  <%= f.datetime_select :present, ampm: true, class: "form-control mt-1 mb-2" %></br>
+
+  <%= f.label :image, t(".image") %>
+  <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png", class: "form-control mt-1 mb-2" %>
+
+  <%= f.label :trailer, t(".trailer") %>
+  <%= f.text_field :trailer, class: "form-control mt-1 mb-2" %>
+
+  <%= f.label :status, t(".status") %>
+  <%= f.select :status, options_for_select(@supports.statuses_film), class: "form-control mt-1 mb-1" %></br>
+  
+  <%= f.submit yield(:button_text), class: "btn btn-primary mt-3 mb-5" %>
+<% end %>

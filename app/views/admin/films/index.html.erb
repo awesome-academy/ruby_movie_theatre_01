@@ -1,0 +1,45 @@
+<% provide :title, t(".film") %>
+  <div class="tail-top">
+    <div class="tail-bottom">
+      <div id="main">
+        <div id="content">
+          <div class="content">
+            <h3><span><%= t ".lastest_movies" %></span></h3>
+            <ul class="movies">
+              <li>
+                <h4>Toy Story 3</h4>
+                <%= image_tag("1page-img2.jpg", alt: "") %>
+                <p><%= t ".toy_des" %></p>
+                <div class="wrapper">
+                  <%= link_to "#", class: "link2" do %>
+                    <span><span><%= t ".read_more" %></span></span>
+                  <% end %>
+                </div>
+              </li>
+              <li>
+                <h4>Prince of Percia: Sands of Time</h4>
+                <%= image_tag("1page-img3.jpg", alt: "") %>
+                <p><%= t ".sand_des" %></p>
+                <div class="wrapper">
+                  <%= link_to "#", class: "link2" do %>
+                    <span><span><%= t ".read_more" %></span></span>
+                  <% end %>
+                </div>
+              </li>
+              <li class="last">
+                <h4>The Twilight Saga: Eclipse</h4>
+                <%= image_tag("1page-img4.jpg", alt: "") %>
+                <p><%= t ".vam_des" %></p>
+                <div class="wrapper">
+                  <%= link_to "#", class: "link2" do %>
+                    <span><span><%= t ".read_more" %></span></span>
+                  <% end %>
+                </div>
+              </li>
+              <li class="clear">&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
