@@ -7,6 +7,16 @@ vi:
         name: "Tên"
         password: "Mật khẩu"
         password_confirmation: "Mật khẩu"
+        phone: Số điện thoại
+      film:
+        name: Tên
+        description: Mô tả
+        image: Ảnh
+  film:
+    new: Mới
+    hot: Hot
+    showing: Đang chiếu
+    stop_present: Dừng chiếu
   static_pages:
     home:
       home: Trang chủ
@@ -39,6 +49,7 @@ vi:
       setting: Cài đặt
       log_out: Đăng xuất
       account: Tài khoản
+      add_film: Thêm phim
     footer:
       copy: Bản quyền SiteName - Tất cả các quyền
       redesign: Thiết kế lại bởi PQV
@@ -61,6 +72,30 @@ vi:
       phone: Số điện thoại
       pass: Mật khẩu
       pass_confirm: Xác nhận mật khẩu
+  films:
+    add_film_successful: Thêm phim thành công
+    add_film_failure: Thêm phim thất bại
+    film_update_successful: Cập nhật phim thành công
+    film_update_failure: Cập nhật phim thất bại
+    film_del: Đã xóa phim
+    film_del_fail: Xóa phim thất bại
+    film_not_found: Không tìm thấy phim
+    new:
+      add_film: Thêm phim
+      save_film: Lưu phim
+    edit:
+      edit_film: Chỉnh sửa phim
+      save_change: Lưu thay đổi
+    form:
+      name: Tên
+      type: Loại phim
+      description: Mô tả
+      present: Trình chiếu
+      image: Ảnh poster
+      trailer: Trailer
+      status: Tình trạng
+    index:
+      film: Phim
   shared:
     error_messages:
       err: "lỗi"
@@ -77,3 +112,5 @@ vi:
   signup_fail: Lỗi! Đăng kí thất bại.
   login_successful: Đăng nhập thành công!
   invalid_email_password: Email hoặc mật khẩu không đúng!!
+  please_login_account: Hãy đăng nhập
+  not_you: Trang này chỉ dành cho quyền admin

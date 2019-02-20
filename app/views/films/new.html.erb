@@ -1,0 +1,10 @@
+<% provide :title, t(".add_film") %>
+<% provide :button_text, t(".save_film") %>
+<div id= "main">
+  <div class="row pt-4 pb-5">
+    <h3 class="m-auto"><%= t ".add_film" %></h3>
+  </div>
+  <div class="row">
+    <%= render "form" %>
+  </div>
+</div>

@@ -1,4 +1,9 @@
 en:
+  film:
+    new: New
+    hot: Hot
+    showing: Showing
+    stop_present: Stop present
   static_pages:
     home:
       home: Home
@@ -31,6 +36,7 @@ en:
       setting: Setting
       log_out: Log out
       account: Account
+      add_film: Add film
     footer:
       copy: Copyright SiteName - All Rights Reserved
       redesign: Redesign by PQV
@@ -53,6 +59,30 @@ en:
       phone: Phone
       pass: Password
       pass_confirm: Password confirm
+  films:
+    add_film_successful: Add film successful
+    add_film_failure: Add film failure
+    film_update_successful: Update film successful
+    film_update_failure: Film update failure
+    film_del: Film deleted
+    film_del_fail: Delete movies failed
+    film_not_found: Film not found
+    new:
+      add_film: Add movies
+      save_film: Save movie
+    edit:
+      edit_film: Edit movie
+      save_change: Save change
+    form:
+      name: Name
+      type: Type
+      description: Description
+      present: Present
+      image: Image poster
+      trailer: Trailer
+      status: Status
+    index:
+      film: Phim
   shared:
     error_messages:
       form_contains: "The form contains"
@@ -69,3 +99,8 @@ en:
   signup_fail: Error! Registration failed.
   login_successful: Logged in successfully!
   invalid_email_password: Email or password is incorrect!!
+  hot: Hot
+  showing: Showing
+  stop_present: Stop present
+  please_login_account: Please login account!!
+  not_you: This page is for admin only

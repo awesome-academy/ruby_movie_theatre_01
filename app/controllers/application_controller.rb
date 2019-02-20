@@ -17,6 +17,12 @@ class ApplicationController < ActionController::Base
     return if logged_in?
     store_location
     flash[:danger] = t "please_login_account"
-    redirect_to signin_path
+    redirect_to login_path
+  end
+
+  def admin_user
+    return if current_user.isAdmin?
+    flash[:danger] = t "not_you"
+    redirect_to root_url
   end
 end
