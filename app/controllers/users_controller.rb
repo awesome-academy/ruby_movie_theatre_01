@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
-    
+
     return if @user
     flash[:danger] = t ".notice_show"
     redirect_to signup_path
@@ -59,9 +59,5 @@ class UsersController < ApplicationController
 
   def correct_user
     redirect_to root_url unless @user.current_user? current_user
-  end
-
-  def admin_user
-    redirect_to root_url unless current_user.isAdmin?
   end
 end

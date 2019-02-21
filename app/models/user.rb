@@ -14,8 +14,8 @@ class User < ApplicationRecord
   validates :password, presence: true,
     allow_nil: true,
     length: {minimum: Settings.min_length_password}
-  validates :phone, format: { with: PHONENUMBER_REGEX },
-    length: {maximum: Settings.max_length_phonenumber} 
+  validates :phone, format: {with: PHONENUMBER_REGEX},
+    length: {maximum: Settings.max_length_phonenumber}
   has_secure_password
   before_save :downcase_email
 

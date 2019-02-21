@@ -3,9 +3,9 @@ class CreateFilms < ActiveRecord::Migration[5.2]
     create_table :films do |t|
       t.string :name
       t.string :description
-      t.string :type
+      t.integer :type_films, default: 0
       t.datetime :present
-      t.string :status
+      t.integer :status, default: 0
       t.string :image
       t.string :trailer
 

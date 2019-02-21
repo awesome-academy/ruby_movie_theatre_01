@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 2019_02_18_032600) do
   create_table "films", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.string "type"
+    t.integer "type_films", default: 0
     t.datetime "present"
-    t.string "status"
+    t.integer "status", default: 0
     t.string "image"
     t.string "trailer"
     t.datetime "created_at", null: false
