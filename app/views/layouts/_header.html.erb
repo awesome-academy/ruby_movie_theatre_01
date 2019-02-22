@@ -15,7 +15,7 @@
             <ul class="dropdown-menu">
               <li><%= link_to t(".profile"), current_user %></li></br>
               <% if current_user.isAdmin? %>
-                <li><%= link_to t(".add_film"), new_film_path  %></li>
+                <li><%= link_to t(".add_film"), new_admin_film_path %></li>
               <% end %>
               <li><%= link_to t(".setting"), edit_user_path(current_user) %></li>
               <div class="dropdown-divider"></div>
