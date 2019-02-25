@@ -95,6 +95,16 @@ vi:
         image: Ảnh poster
         trailer: Trailer
         status: Tình trạng
+    schedules:
+      add_schedule_successful: Thêm suất chiếu thành công
+      add_schedule_failure: Thêm suất chiếu thất bại
+      schedule_update_successful: Cập nhật suất chiếu thành công
+      schedule_update_failure: Cập nhật suất chiếu thất bại
+      schedule_del: Đã xóa suất chiếu
+      schedule_del_fail: Xóa thất bại
+      schedule_not_found: Không tìm thấy suất chiếu
+      film_not_found: Không tìm thấy phim
+      room_not_found: Không tìm thấy phòng
   films:
     index:
       film: Phim

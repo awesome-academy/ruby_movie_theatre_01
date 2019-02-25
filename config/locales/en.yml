@@ -82,6 +82,16 @@ en:
         image: Image poster
         trailer: Trailer
         status: Status
+    schedules:
+      add_schedule_successful: Add schedule successful
+      add_schedule_failure: Add schedule failure
+      schedule_update_successful: Schedule update successful
+      schedule_update_failure: Schedule update failure
+      schedule_del: Schedule deleted
+      schedule_del_fail: Schedule delete fail
+      schedule_not_found: Schedule not found
+      film_not_found: Film not found
+      room_not_found: Room not found
   films:
     index:
       film: Phim

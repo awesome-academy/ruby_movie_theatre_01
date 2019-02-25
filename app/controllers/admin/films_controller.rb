@@ -13,21 +13,23 @@ class Admin::FilmsController < ApplicationController
 
     if @film.save
       flash[:success] = t ".add_film_successful"
-      redirect_to @film
+      redirect_to admin_film_path @film
     else
       flash.now[:danger] = t ".add_film_failure"
       render :new
     end
   end
 
-  def show; end
+  def show
+    @schedules = @film.schedules
+  end
 
   def edit; end
 
   def update
     if @film.update film_params
       flash[:success] = t ".film_update_successful"
-      redirect_to @film
+      redirect_to admin_film_path @film
     else
       flash.now[:danger] = t ".film_update_failure"
       render :edit

@@ -1,0 +1,13 @@
+<%= form_with model: [:admin, @schedule], class: "col-12", local: true do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <div><%= hidden_field_tag :film_id, @schedule.film_id %></div>
+
+  <%= f.label :showtime, t(".showtime") %>
+  <%= f.datetime_select :showtime, ampm: true, class: "form-control mt-1 mb-2" %></br>
+
+  <%= f.label :room, t(".room") %>
+  <%= f.select :room_id, Schedule.type_schedules, class: "form-control mt-1 mb-1" %></br>
+  
+  <%= f.submit yield(:button_text), class: "btn btn-primary mt-3 mb-5" %>
+<% end %>

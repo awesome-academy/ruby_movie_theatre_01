@@ -20,7 +20,9 @@ class FilmsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @schedules = @film.schedules
+  end
 
   def edit; end
 

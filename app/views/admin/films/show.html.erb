@@ -1,0 +1,34 @@
+<div class="tail-top">
+  <div class="tail-bottom">
+    <div id= "main">
+      <div class="row mt-3 mb-5">
+        <div class="col-md-4 bg-primary p-3">
+          <h3><%= t ".film_information" %></h3>
+          <%= link_to t(".edit_film"), edit_admin_film_path(@film), class: "btn btn-warning", role: "button" %>
+          <%= link_to t(".delete_film"), [:admin, @film], method: :delete,
+            data: {confirm: t(".are_you_sure")}, class: "btn btn-danger", role: "button" %>
+          <%= image_tag @film.image.url if @film.image? %>
+          <p><%= t ".name_film" %>: <%= @film.name %></p>
+          <p><%= t ".description" %></p>
+          <p><%= @film.description %></p>
+          <h3><%= t ".list_schedule" %></h3>
+          <ul id="schedules_item">
+            <% @schedules.each do |schedule| %>
+              <li>
+                <button type="button" class="btn btn-warning mb-1">
+                  P<%= schedule.room_id %>
+                  <%= schedule.showtime.to_s(:time) %>
+                </button>
+                | <%= link_to t(".edit_schedule"), edit_admin_schedule_path(@schedules) %>
+                | <%= link_to t("delete"),admin_schedule_path(schedule), method: :delete,
+              data: { confirm: t(".are_you_sure") } %>
+              </li>
+            <% end %>
+          </ul>
+          <%= link_to t(".add_schedule"), new_admin_schedule_path(film_id: @film.id),
+            class: "btn btn-primary d-inline", role: "button" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
