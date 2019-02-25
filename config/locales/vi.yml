@@ -95,6 +95,10 @@ vi:
         image: Ảnh poster
         trailer: Trailer
         status: Tình trạng
+      index:
+        film: Phim
+        lastest_movies: Phim mới nhất
+        read_more: Xem thêm
     schedules:
       add_schedule_successful: Thêm suất chiếu thành công
       add_schedule_failure: Thêm suất chiếu thất bại
@@ -107,7 +111,9 @@ vi:
       room_not_found: Không tìm thấy phòng
   films:
     index:
+      read_more: Xem thêm
       film: Phim
+      lastest_movies: Phim mới nhất
   shared:
     error_messages:
       err: "lỗi"

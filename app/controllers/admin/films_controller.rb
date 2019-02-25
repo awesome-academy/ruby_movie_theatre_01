@@ -4,6 +4,10 @@ class Admin::FilmsController < ApplicationController
   before_action :admin_user, only: %i(new edit update destroy)
   before_action :support
 
+  def index
+    @film = Film.last(12)
+  end
+
   def new
     @film = Film.new
   end
