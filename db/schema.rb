@@ -32,9 +32,9 @@ ActiveRecord::Schema.define(version: 2019_02_18_032600) do
 
   create_table "schedules", force: :cascade do |t|
     t.integer "room_id"
-    t.integer "showtime_id"
     t.integer "ticket_id"
     t.integer "film_id"
+    t.datetime "showtime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -42,12 +42,6 @@ ActiveRecord::Schema.define(version: 2019_02_18_032600) do
   create_table "seats", force: :cascade do |t|
     t.string "position"
     t.integer "room_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "showtimes", force: :cascade do |t|
-    t.datetime "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
