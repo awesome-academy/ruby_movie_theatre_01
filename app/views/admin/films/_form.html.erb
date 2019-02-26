@@ -8,7 +8,7 @@
   <%= f.select :type_films, options_for_select(@supports.type_file), class: "form-control mt-1 mb-2" %></br>
 
   <%= f.label :description, t(".description") %>
-  <%= f.text_field :description, class: "form-control mt-1 mb-2" %>
+  <%= f.text_area :description, class: "form-control mt-1 mb-2" %>
 
   <%= f.label :present, t(".present") %>
   <%= f.datetime_select :present, ampm: true, class: "form-control mt-1 mb-2" %></br>

@@ -82,6 +82,10 @@ en:
         image: Image poster
         trailer: Trailer
         status: Status
+      index:
+        film: Phim
+        lastest_movies: Lastest movies
+        read_more: Read more
     schedules:
       add_schedule_successful: Add schedule successful
       add_schedule_failure: Add schedule failure
@@ -95,6 +99,8 @@ en:
   films:
     index:
       film: Phim
+      read_more: Read more
+      lastest_movies: Lastest movies
   shared:
     error_messages:
       form_contains: "The form contains"
