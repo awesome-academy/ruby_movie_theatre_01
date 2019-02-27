@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_08_014458) do
+ActiveRecord::Schema.define(version: 2019_03_18_013537) do
 
   create_table "films", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,12 @@ ActiveRecord::Schema.define(version: 2019_03_08_014458) do
     t.integer "status", default: 0
     t.string "image"
     t.string "trailer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posters", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

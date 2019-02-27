@@ -163,9 +163,8 @@ h3 {
   font-size:30px;
   line-height:1.2em;
   color:#d72a18;
-  margin-bottom:20px;
+  margin:31px 0 20px;
   text-align: center;
-  margin-top: 25px;
 }
 h3 b {
   color:#e1e1e1;
@@ -431,13 +430,6 @@ a {
   line-height:1.714em;	
   padding:10px 0 12px 0;	
 }	
-.img-box1.alt {	
-  padding-top:0;	
-  padding-bottom:25px;	
-}	
-.img-box1.alt img {	
-  margin-top:0;	
-}	
 .img-box1 img {	
   float:left;
   width: 115px;
@@ -446,7 +438,7 @@ a {
 }
 .drop_img_crs{
   width: 938px;
-  height:337px;
+  height:380px;
 }
 .taq {
   color: red;
@@ -501,22 +493,12 @@ iframe{
     color: #2afc00;
   }
 }
-.button-seat-sold{
-  margin-left: 10px;
-  button{
-    width: 45px;
-    height: 45px;
-    margin: 0 0 7px 3px;
-    background: image-url("chairs.png");
-    background-size: cover;
-    background-position: bottom;
-    border: none;
-    color: #fc0000;
-  }
-}
 
 .bg-blue {
   background: blue !important;
+}
+.bg-red {
+  background: red !important;
 }
 .design-schedule{
   float: left;
@@ -556,4 +538,38 @@ select{
 table, th, td {
   border: 1px solid white;
   text-align: center;
+}
+.img_ticket_price_2d{
+  width: 970px;
+  height: 550px;
+  margin-bottom: 8%;
+}
+.img_ticket_price_3d{
+  width: 970px;
+  height: 430px;
+  margin-bottom: 8%;
+}
+.img_ticket_price_4d{
+  width: 970px;
+  height: 350px;
+  margin-bottom: 8%;
+}
+.cus-ticket-price{
+  list-style: unset;
+  font-size: 22px;
+  margin-left: 5%;
+  color: rgb(60, 255, 0);
+  margin-bottom: 5%;
+  li{
+    margin-bottom: 3%;
+  }
+  li a{
+    color: rgb(60, 255, 0);
+  }
+}
+.theater{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin-bottom: 8%;
 }

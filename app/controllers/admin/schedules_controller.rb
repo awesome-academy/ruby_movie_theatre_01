@@ -3,7 +3,7 @@ class Admin::SchedulesController < ApplicationController
   before_action :logged_in_user
   before_action :admin_user, only: %i(new create edit update destroy)
   before_action :find_film, only: %i(new create)
-  before_action :load_type_schedule, only: %i(new create)
+  before_action :load_type_schedule, only: %i(new create edit)
 
   def new
     @schedule = @film.schedules.build

@@ -41,13 +41,13 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <%= image_tag("cua-lai-vo-bau3.jpg", alt: "", :class => "drop_img_crs") %>
+                  <%= image_tag(Poster.last.link, alt: "", class: "drop_img_crs") %>
                 </div>
                 <div class="carousel-item">
-                  <%= image_tag("tro_ly.jpg", alt: "", :class => "drop_img_crs") %>
+                  <%= image_tag(Poster.last(2).first.link, alt: "", class: "drop_img_crs") %>
                 </div>
                 <div class="carousel-item">
-                  <%= image_tag("dragon_3.jpg", alt: "", :class => "drop_img_crs") %>
+                  <%= image_tag(Poster.last(3).first.link, alt: "", class: "drop_img_crs") %>
                 </div>
               </div>
               <%= link_to "#demo", class: "carousel-control-prev", 
