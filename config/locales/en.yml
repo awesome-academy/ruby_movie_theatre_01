@@ -101,6 +101,8 @@ en:
       film: Phim
       read_more: Read more
       lastest_movies: Lastest movies
+    show:
+      film_information: Film Infomation
   shared:
     error_messages:
       form_contains: "The form contains"

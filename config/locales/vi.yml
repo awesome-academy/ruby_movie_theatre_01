@@ -114,6 +114,8 @@ vi:
       read_more: Xem thêm
       film: Phim
       lastest_movies: Phim mới nhất
+    show:
+      film_information: Chi tiết phim
   shared:
     error_messages:
       err: "lỗi"

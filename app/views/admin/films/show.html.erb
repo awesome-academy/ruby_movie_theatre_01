@@ -10,7 +10,7 @@
           <%= image_tag @film.image.url if @film.image? %>
           <p><%= t ".name_film" %>: <%= @film.name %></p>
           <p><%= t ".description" %></p>
-          <p><%= @film.description %></p>
+          <p><%= sanitize @film.description %></p>
           <h3><%= t ".list_schedule" %></h3>
           <ul id="schedules_item">
             <% @schedules.each do |schedule| %>

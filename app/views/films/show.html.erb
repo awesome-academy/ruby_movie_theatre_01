@@ -1,25 +1,33 @@
+<% provide :title, t(".film_information") %>
 <div class="tail-top">
   <div class="tail-bottom">
     <div id= "main">
+      <h3><span><%= t ".film_information" %></span></h3>
       <div class="row mt-5">
-          <div class="col-md-4 p-3">
-            <%= image_tag @film.image.url if @film.image? %>
+          <div class="col-md-4 p-3" >
+            <%= image_tag @film.image.url, class: "img-border-radius"  %>
           </div>
-          <h3><%= t ".film_information" %></h3>
-          <p> <%= t ".name_film" %>: <%= @film.name %></p>
-          <p><%= t ".description" %></p>
-          <p><%= @film.description %></p>
-          <h3><%= t ".list_schedule" %></h3>
-          <ul id="schedules_item">
-            <% @schedules.each do |schedule| %>
-              <li>
-                <button type="button" class="btn btn-warning mb-1">
-                  P<%= schedule.room_id %>
-                  <%= schedule.showtime.to_s(:time) %>
-                </button>
-              </li>
-            <% end %>
-          </ul>
+          <div class="col-md-8 p-3">
+            <p><h1><%= @film.name %></h1></p>
+            <p><%= sanitize @film.description %></p>
+          </div>
+          <h3 class="ml-4"><%= t ".list_schedule" %></h3>
+      </div>
+      <div class="row">
+        <ul class="ml-4" id="schedules_item">
+          <% @schedules.each do |schedule| %>
+            <li class= "mr-3 design-schedule">
+              <button type="button" class="btn btn-warning mb-2">
+                P<%= schedule.room_id %> |
+                <%= schedule.showtime.to_s(:time) %>
+              </button>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <h3><span>Trailer</span></h3>
+      <div class="row mb-5" id="trailer">
+        <%= embed(@film.trailer)%>
       </div>
     </div>
   </div>
