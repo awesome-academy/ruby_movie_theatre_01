@@ -110,6 +110,15 @@ vi:
         film: Phim
         lastest_movies: Phim mới nhất
         read_more: Xem thêm
+      show:
+        film_information: Chi tiết phim
+        list_schedule: Danh sách suất chiếu
+        edit_film: Chỉnh sửa phim
+        delete_film: Xóa phim
+        are_you_sure: Bạn có chắc chắn
+        edit_schedule: Chỉnh sửa suất chiếu
+        delete: Xóa
+        add_schedule: Thêm suất chiếu
     schedules:
       add_schedule_successful: Thêm suất chiếu thành công
       add_schedule_failure: Thêm suất chiếu thất bại
@@ -154,6 +163,11 @@ vi:
       wallet: Số dư TK
       gio_chieu: Giờ chiếu
       confirmation: Xác nhận
+      ghe_da_chon: Ghế đã 
+      tong_tien: Tổng tiền
+    create:
+      thanh_cong: Thanh toán thành công
+      so_du_tk_ko_du: Số dư tài khoản không đủ. Vui lòng nạp thêm!!!
   films:
     index:
       read_more: Xem thêm

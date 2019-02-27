@@ -5,7 +5,7 @@ class Admin::FilmsController < ApplicationController
   before_action :support
 
   def index
-    @film = Film.last(12)
+    @film = Film.last(12).reverse
   end
 
   def new

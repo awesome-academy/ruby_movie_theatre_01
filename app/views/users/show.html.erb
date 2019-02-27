@@ -41,7 +41,7 @@
                 <td><%= ticket.schedule.film.name %></td>
                 <td><%= ticket.schedule.showtime.strftime("%d-%m-%Y at %I:%M %p") %></td>
                 <td><%= ticket.schedule.room.id %></td>
-                <td><%= ticket.id %></td>
+                <td><%= ticket.id.to_s.rjust(6, "0") %></td>
                 <td><%= ticket.seat.position %></td>
               </tr>
             <% end %>
