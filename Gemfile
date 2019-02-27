@@ -7,6 +7,7 @@ gem "bcrypt", "~> 3.1", ">= 3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap", "~> 4.2", ">= 4.2.1"
 gem "carrierwave", "1.2.2"
+gem "ckeditor"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "jbuilder", "~> 2.5"
