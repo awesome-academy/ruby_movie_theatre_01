@@ -15,6 +15,6 @@ class Film < ApplicationRecord
     length: {maximum: Settings.max_length_name}
   validates :description, presence: true,
     length: {maximum: Settings.max_length_decription}
-  validates :image, presence: true
   validates :trailer, presence: true
+  validates :image, presence: true
 end

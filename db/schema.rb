@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_01_015941) do
+ActiveRecord::Schema.define(version: 2019_03_08_014458) do
 
-  create_table "films", force: :cascade do |t|
+  create_table "films", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.string "description"
+    t.text "description"
     t.integer "type_films", default: 0
     t.datetime "present"
     t.integer "status", default: 0
@@ -24,29 +24,28 @@ ActiveRecord::Schema.define(version: 2019_03_01_015941) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "rooms", force: :cascade do |t|
+  create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "schedules", force: :cascade do |t|
+  create_table "schedules", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "room_id"
-    t.integer "ticket_id"
     t.integer "film_id"
     t.datetime "showtime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "seats", force: :cascade do |t|
+  create_table "seats", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "position"
     t.integer "room_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "tickets", force: :cascade do |t|
+  create_table "tickets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "soldtime"
     t.string "price"
     t.string "status"
@@ -54,9 +53,10 @@ ActiveRecord::Schema.define(version: 2019_03_01_015941) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "schedule_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "phone"

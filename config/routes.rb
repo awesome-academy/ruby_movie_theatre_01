@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout",  to: "sessions#destroy"
     resources :users
+    resources :tickets, except: %i(update destroy)
     resources :films, only: %i(index show)
     resources :schedules, only: %i(index show)
     namespace :admin do

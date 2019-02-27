@@ -72,6 +72,17 @@ vi:
       phone: Số điện thoại
       pass: Mật khẩu
       pass_confirm: Xác nhận mật khẩu
+    show:
+      ticket: Vé
+      ten_phim: Tên phim
+      ho_ten: Họ tên
+      phone: Số điện thoại
+      email: Email
+      wallet: Số dư TK
+      gio_chieu: Giờ chiếu
+      phong: Phòng
+      id_ve: Mã vé
+      position: Vị trí
   admin:
     films:
       add_film_successful: Thêm phim thành công
@@ -109,6 +120,15 @@ vi:
       schedule_not_found: Không tìm thấy suất chiếu
       film_not_found: Không tìm thấy phim
       room_not_found: Không tìm thấy phòng
+      form:
+        showtime: Giờ chiếu
+        room: Phòng
+      edit:
+        update_schedule: Cập nhật suất chiếu
+        edit_schedule: Chỉnh sửa suất chiếu
+      new:
+        add_schedule: Thêm suất chiếu
+        save_schedule: Lưu suất chiếu
   schedules:
     show:
       show:
@@ -117,9 +137,23 @@ vi:
       time: "Thời gian:"
       room: "Phòng:"
       seat: "Ghế ngồi:"
-      nothing: "Nothing: Ghế trống"
-      blue: "Blue: Đang đặt"
-      red: "Red: Đã bán"
+      nothing: "Trắng: Ghế trống"
+      blue: "Xanh: Đang đặt"
+      red: "Đỏ: Đã bán"
+      continue: Tiếp tục
+      tien: "Tiền:"
+  tickets:
+    modal_confirmation:
+      confirmation: Xác nhận
+      ticket: Mua vé
+      thong_tin: Thông tin người mua
+      ten_phim: Tên phim
+      ho_ten: Họ tên
+      phone: Số điện thoại
+      email: Email
+      wallet: Số dư TK
+      gio_chieu: Giờ chiếu
+      confirmation: Xác nhận
   films:
     index:
       read_more: Xem thêm

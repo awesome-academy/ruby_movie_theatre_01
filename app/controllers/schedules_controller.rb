@@ -1,5 +1,6 @@
 class SchedulesController < ApplicationController
   before_action :load_schedule, only: %i(show)
+  before_action :logged_in_user
 
   def show; end
 
