@@ -109,6 +109,17 @@ vi:
       schedule_not_found: Không tìm thấy suất chiếu
       film_not_found: Không tìm thấy phim
       room_not_found: Không tìm thấy phòng
+  schedules:
+    show:
+      show:
+      book_ticket: Đặt vé
+      present: "Ngày công chiếu:"
+      time: "Thời gian:"
+      room: "Phòng:"
+      seat: "Ghế ngồi:"
+      nothing: "Nothing: Ghế trống"
+      blue: "Blue: Đang đặt"
+      red: "Red: Đã bán"
   films:
     index:
       read_more: Xem thêm
@@ -116,6 +127,7 @@ vi:
       lastest_movies: Phim mới nhất
     show:
       film_information: Chi tiết phim
+      list_schedule: Danh sách suất chiếu
   shared:
     error_messages:
       err: "lỗi"
