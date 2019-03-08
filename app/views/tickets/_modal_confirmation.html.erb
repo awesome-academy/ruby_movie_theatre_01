@@ -1,0 +1,51 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Confirmation</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="tail-top">
+        <div class="tail-bottom">
+          <div id= "main">
+            <div class="row pt-4 pb-5">
+              <h3 class="m-auto"><%= t ".ticket" %></h3>
+            </div>
+            <h2><%= t ".thong_tin" %></h2>
+            <div class="row">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th><%= t ".ten_phim" %></th>
+                    <th><%= t ".gio_chieu" %></th>
+                    <th><%= t ".ho_ten" %></th>
+                    <th><%= t ".phone" %></th> 
+                    <th><%= t ".email" %></th>
+                    <th><%= t ".wallet" %></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><%= @schedule.film.name %></td>
+                    <td><%= @schedule.showtime.to_s(:time) %></td>
+                    <td><%= current_user.name %></td>
+                    <td><%= current_user.phone %></td>
+                    <td> <%= current_user.email %></td>
+                    <td> <%= current_user.wallet %></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <%= link_to t(".confirmation"), "#", remote: true, data: {url: tickets_path(schedule_id: @schedule.id, positions: params[:positions], total: params[:total])}, class: "btn btn-primary confirm" %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>

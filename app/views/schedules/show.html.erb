@@ -10,7 +10,7 @@
             <% @schedule.seat_ids.in_groups_of(10).each_with_index do |row_seat, index_row| %>
               <% row_seat.each_with_index do |seat, index_col| %>
                 <button class="seat-pos" id="<%= seat %>">
-                  <%= "#{("A".."Z").to_a[index_row]}#{index_col + 1}" %>
+                  <%= "#{("A".."Z").to_a[index_row]}#{index_col+1}" %>
                 </button>
               <% end %>
               <br>
@@ -37,15 +37,15 @@
                 <p><%= t ".room" %>&ensp;P<%= @schedule.room_id %></p>
                 <p>
                 <%= t ".seat" %>&ensp;</p>
-                  <div class= "row ml-3">
-                    <% @schedule.seat_ids.in_groups_of(3).each_with_index do |row_seat, index_row| %>
-                      <% row_seat.each_with_index do |seat, index_col| %>
-                        <span id="seat-<%= seat %>"></span>
-                      <% end %>
-                    <% end %>
-                  </div>
+                <p id="seat-selected"></p>
                 </p>
-                <%= link_to "Tiep tuc", "#", class: "btn btn-primary mt-10 mb-2" %>
+                <p class="id-seats"></p>
+                <p class="money">
+                  <%= t ".tien" %>&nbsp;<p id="total" class="money">0</p>
+                </p>
+                <%= button_tag t(".continue"), class: "btn btn-primary continue", data: {
+                  url: new_ticket_path(schedule_id: @schedule.id), toggle: "modal", target: "#myModal"
+                } %>
               </div>
             </div>
           </div>
@@ -54,3 +54,4 @@
     </div>
   </div>
 </div>
+<div class="modal" id="myModal"></div>

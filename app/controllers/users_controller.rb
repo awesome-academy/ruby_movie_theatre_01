@@ -21,7 +21,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @ticket= current_user.tickets
+  end
 
   def edit; end
 

@@ -3,11 +3,50 @@
   <div class="tail-bottom">
     <div id= "main">
       <div class="row">
-        <aside class="col-md-4">
-          <section class="user_info">
-            <h3><%= @user.name %></h3>
-          </section>
-        </aside>
+        <h3><%= @user.name %></h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th><%= t ".ho_ten" %></th>
+              <th><%= t ".phone" %></th> 
+              <th><%= t ".email" %></th>
+              <th><%= t ".wallet" %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><%= @user.name %></td>
+              <td><%= @user.phone %></td>
+              <td> <%= @user.email %></td>
+              <td> <%= @user.wallet %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <h3><%= t ".ticket" %></h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th><%= t ".ten_phim" %></th>
+              <th><%= t ".gio_chieu" %></th>
+              <th><%= t ".phong" %></th>
+              <th><%= t ".id_ve" %></th>
+              <th><%= t ".position" %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @ticket.each do |ticket| %>
+              <tr>
+                <td><%= ticket.schedule.film.name %></td>
+                <td><%= ticket.schedule.showtime.strftime("%d-%m-%Y at %I:%M %p") %></td>
+                <td><%= ticket.schedule.room.id %></td>
+                <td><%= ticket.id %></td>
+                <td><%= ticket.seat.position %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

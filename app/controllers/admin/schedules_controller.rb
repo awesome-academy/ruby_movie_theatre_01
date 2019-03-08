@@ -3,6 +3,7 @@ class Admin::SchedulesController < ApplicationController
   before_action :logged_in_user
   before_action :admin_user, only: %i(new create edit update destroy)
   before_action :find_film, only: %i(new create)
+  before_action :load_type_schedule, only: %i(new create)
 
   def new
     @schedule = @film.schedules.build
@@ -65,5 +66,9 @@ class Admin::SchedulesController < ApplicationController
     return if @film
     flash[:danger] = t ".film_not_found"
     redirect_to admin_films_path
+  end
+
+  def load_type_schedule
+    @room_type = Schedule.type_schedules
   end
 end

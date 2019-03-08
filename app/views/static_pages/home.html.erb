@@ -68,7 +68,7 @@
                   <li>
                     <%= image_tag(Film.last(n).first.image.url, alt: "") %>
                     <h4><%= link_to Film.last(n).first.name, film_path(Film.last(n).first) %></h4>
-                    <p><%= truncate(Film.last(n).first.description, length: 200) %></p>
+                    <p><%= truncate(Film.last(n).first.description, length: 180) %></p>
                     <div class="wrapper">
                       <%= link_to film_path(Film.last(n).first), class: "link2" do %>
                         <span><span><%= t ".read_more" %></span></span>

@@ -149,9 +149,9 @@ h1 {
 h2 {
   font-size:30px;
   line-height:1.2em;
-  color:#1d1d1d;
+  color:#2c6d9a;
   text-transform:uppercase;
-  margin-bottom:12px;
+  margin-bottom:50px;
   font-weight: bold;
 }
 h2 span {
@@ -189,7 +189,7 @@ h4 {
   height: 22px;
 }
 h5{
-  margin: 30px 0 30px 11%;
+  margin: 30px 0 30px 7%;
   .blue{
     float: left;
     color: blue;
@@ -529,4 +529,27 @@ iframe{
 }
 iframe{
   width: 940px;
+}
+select{
+  width: 70px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+#film_status{
+  width: 120px;
+}
+.money{
+  float: left;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.design-ticket{
+  display: contents;
+  float: left;
+}
+.confirm{
+  margin: 15px 0 50px 45%;
+}
+.modal-dialog {
+  max-width: 1000px;
 }
