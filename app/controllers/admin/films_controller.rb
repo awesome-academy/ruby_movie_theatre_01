@@ -1,7 +1,7 @@
 class Admin::FilmsController < ApplicationController
   before_action :load_film, only: %i(show edit update destroy)
   before_action :logged_in_user
-  before_action :admin_user, only: %i(new edit update destroy)
+  before_action :admin_user, only: %i(new show edit update destroy)
   before_action :support
 
   def index

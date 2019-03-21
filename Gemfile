@@ -16,6 +16,7 @@ gem "rails", "~> 5.2.2"
 gem "rails-i18n"
 gem "sass-rails", "~> 5.0"
 # gem "turbolinks", "~> 5"
+gem "recaptcha", require: "recaptcha/rails"
 gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
