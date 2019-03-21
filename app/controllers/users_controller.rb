@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @ticket = current_user.tickets
+    @ticket = current_user.tickets.last(10).reverse
   end
 
   def edit; end

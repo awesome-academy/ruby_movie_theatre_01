@@ -9,13 +9,14 @@ class TicketsController < ApplicationController
   end
 
   def create
-    params["positions"].each do |position|
-      seat = @schedule.room.seats.find_by position: position
-      @ticket = @schedule.tickets.build seat: seat,
-        user: current_user, soldtime: Time.now
-      @ticket.save
+    if current_user.wallet >= (params["positions"].length * 50_000)
+      tao_ve
+      tinh_tien
+      flash[:success] = t ".thanh_cong"
+    else
+      flash[:danger] = t ".so_du_tk_ko_du"
+      nil
     end
-    tinh_tien
   end
 
   private
@@ -43,5 +44,14 @@ class TicketsController < ApplicationController
   def tinh_tien
     current_user.update(wallet: current_user.wallet -
                           (params["positions"].length * 50_000))
+  end
+
+  def tao_ve
+    params["positions"].each do |position|
+      seat = @schedule.room.seats.find_by position: position
+      @ticket = @schedule.tickets.build seat: seat,
+        user: current_user, soldtime: Time.now
+      @ticket.save
+    end
   end
 end

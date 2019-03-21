@@ -21,20 +21,22 @@
                   <tr>
                     <th><%= t ".ten_phim" %></th>
                     <th><%= t ".gio_chieu" %></th>
+                    <th><%= t ".ghe_da_chon" %></th>
+                    <th><%= t ".tong_tien" %></th>
                     <th><%= t ".ho_ten" %></th>
                     <th><%= t ".phone" %></th> 
                     <th><%= t ".email" %></th>
-                    <th><%= t ".wallet" %></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td><%= @schedule.film.name %></td>
-                    <td><%= @schedule.showtime.to_s(:time) %></td>
+                    <td><%= @schedule.showtime.strftime("%d-%m-%Y at %I:%M %p") %></td>
+                    <td><%= params["positions"].join(", ") %></td>
+                    <td><%= params[:total] %></td>
                     <td><%= current_user.name %></td>
                     <td><%= current_user.phone %></td>
                     <td> <%= current_user.email %></td>
-                    <td> <%= current_user.wallet %></td>
                   </tr>
                 </tbody>
               </table>

@@ -64,13 +64,13 @@
             <div class="content">
               <h3><span><%= t ".lastest_movies" %></span></h3>
               <ul class="movies">
-                <% (1..3).each do |n| %>
+                <% @film.each do |film| %>
                   <li>
-                    <%= image_tag(Film.last(n).first.image.url, alt: "") %>
-                    <h4><%= link_to Film.last(n).first.name, film_path(Film.last(n).first) %></h4>
-                    <p><%= truncate(Film.last(n).first.description, length: 180) %></p>
+                    <%= image_tag(film.image.url, alt: "") %>
+                    <h4><%= link_to film.name, film_path(film) %></h4>
+                    <p><%= truncate(film.description, length: 180, escape: false) %></p>
                     <div class="wrapper">
-                      <%= link_to film_path(Film.last(n).first), class: "link2" do %>
+                      <%= link_to film_path(film), class: "link2" do %>
                         <span><span><%= t ".read_more" %></span></span>
                       <% end %>
                     </div>

@@ -320,7 +320,7 @@ h5{
   background-position:0 0;
   text-align:center;
 }
-#header .row-2 ul li a:hover, #header .row-2 ul li a.active {
+#header .row-2 ul li a:hover {
   color:#d72a18;
   background: image-url("nav-act.gif");
 }
@@ -552,4 +552,8 @@ select{
 }
 .modal-dialog {
   max-width: 1000px;
+}
+table, th, td {
+  border: 1px solid white;
+  text-align: center;
 }

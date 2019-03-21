@@ -17,7 +17,7 @@ en:
       experience: Experience the hottest movies and create a global fever. 
       leading_trend: Tom Cruise's acclaimed action movies, or eye-catching battle scenes from the Marvel movie universe. 
         Even with emotional psychological films for couples, we are always leading the trend.
-      lastest_movies: Lastest movies
+      lastest_movies: Newest movies
       read_more: Read more
       vam_des: "Bella is about to graduate and she will have to make the most difficult decision of her life will choose Edward or Jacob. This choice may recall the hundreds of years of feud between werewolves and Vampires. At this moment, the appearance of bloodthirsty vampire Victoria has made the story turn to another direction."
       sand_des: "Sands of Time is a story about Dastan, a boy who wandered on the Persian street in the 6th century. The king adopted him as a result of the imposing ambition from Dastan."
@@ -95,8 +95,17 @@ en:
         status: Status
       index:
         film: Phim
-        lastest_movies: Lastest movies
+        lastest_movies: Newest movies
         read_more: Read more
+      show:
+        film_information: Film Infomation
+        list_schedule: List schedule
+        edit_film: Edit film
+        delete_film: Delete film
+        are_you_sure: Are you sure
+        edit_schedule: Edit schedule
+        delete: Delete
+        add_schedule: Add schedule
     schedules:
       add_schedule_successful: Add schedule successful
       add_schedule_failure: Add schedule failure
@@ -140,11 +149,16 @@ en:
       wallet: Wallet
       gio_chieu: Time show
       confirmation: Confirmation
+      ghe_da_chon: Seat picked
+      tong_tien: Money
+    create:
+      thanh_cong: Payment success
+      so_du_tk_ko_du: Account balance is not enough. Please deposit more money !!!
   films:
     index:
       film: Phim
       read_more: Read more
-      lastest_movies: Lastest movies
+      lastest_movies: Newest movies
     show:
       film_information: Film Infomation
       list_schedule: List schedule
