@@ -32,9 +32,14 @@ vi:
         Thậm chí với những phim tâm lý tình cảm dành cho các cặp đôi, chúng tôi luôn là những người dẫn đầu xu thế.
       lastest_movies: Phim mới nhất
       read_more: Xem thêm
-      toy_des: Mở đầu phim, để tránh bị đem quăng ra bãi rác sau khi cậu chủ Andy lên học Cao Đẳng, Buzz cùng nhóm bạn đồ chơi tìm cách lẻn vào thùng hàng để được đưa đến nhà trẻ Sunnyside để được sử dụng mãi mãi.
-      sand_des: Sands of Time là câu chuyện kể về Dastan, một chàng trai sống lang thang trên đường phố Ba Tư hồi thế kỷ 6. Nhà vua đã nhận anh làm con nuôi vì nhận thấy khí phách can trường từ Dastan.
-      vam_des: "Bella chuẩn bị tốt nghiệp và cô sẽ phải đưa ra quyết định khó khăn nhất đời mình sẽ lựa chọn Edward hay Jacob. Lựa chọn này có thể sẽ gợi lại mối thù hàng trăm năm qua giữa người sói và Ma cà rồng. Đúng lúc này, sự xuất hiện của Ma cà rồng khát máu Victoria đã làm câu chuyện rẽ sang hướng khác."
+    ticketprice:
+      gia_ve: Giá vé
+      ticket_des_1: Bảng giá theo giờ tất cả các phim 2D, 3D, 4D đều có ở ảnh bên dưới.
+      ticket_des_2: Về HS-SV vui lòng xuất trình thẻ HSSV để được hưởng ưu đãi tại rạp.
+      ticket_des_3: Vé trẻ em dành cho trẻ em dưới 1m3.
+      ticket_des_4: Trẻ em dưới 0.7m được miễn phí vé nhưng với điều kiện phải ngồi chung ghế với người lớn.
+    theater:
+      gioi_thieu: Giới thiệu
   layouts:
     header:
       login: Đăng nhập
@@ -50,9 +55,15 @@ vi:
       log_out: Đăng xuất
       account: Tài khoản
       add_film: Thêm phim
+      add_poster: Thêm poster
     footer:
       copy: Bản quyền SiteName - Tất cả các quyền
       redesign: Thiết kế lại bởi PQV
+  posters:
+    new:
+      add_poster: Thêm poster
+      save: Lưu
+      link: Dường đẫn ảnh
   users:
     update_success: Cập nhật thành công
     please_login: Hãy đăng nhập.

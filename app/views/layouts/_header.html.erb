@@ -16,6 +16,7 @@
               <li><%= link_to t(".profile"), current_user %></li></br>
               <% if current_user.isAdmin? %>
                 <li><%= link_to t(".add_film"), new_admin_film_path %></li>
+                <li><%= link_to t(".add_poster"), new_poster_path %></li>
               <% end %>
               <li><%= link_to t(".setting"), edit_user_path(current_user) %></li>
               <div class="dropdown-divider"></div>
@@ -44,8 +45,8 @@
       <ul>
         <li><%= link_to t(".home"), root_path %></li>
         <li><%= link_to t(".movie"), films_path %></li>
-        <li><%= link_to t(".cine") %></li>
-        <li><%= link_to t(".fare") %></li>
+        <li><%= link_to t(".cine"), theater_path %></li>
+        <li><%= link_to t(".fare"), ticket_price_path %></li>
         <li class="last"><%= link_to t(".news") %></li>
       </ul>
     </div>

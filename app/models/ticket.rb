@@ -4,4 +4,5 @@ class Ticket < ApplicationRecord
   belongs_to :schedule
   belongs_to :user
   belongs_to :seat
+  validates_uniqueness_of :seat_id, scope: [:schedule_id]
 end

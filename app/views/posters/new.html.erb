@@ -1,0 +1,20 @@
+<% provide :title, t(".add_poster") %>
+<% provide :button_text, t(".save") %>
+<div class="tail-top">
+  <div class="tail-bottom">
+    <div id= "main">
+      <div class="row pt-4 pb-5">
+        <h3 class="m-auto"><%= t ".add_poster" %></h3>
+      </div>
+      <div class="row">
+        <%= form_with model: @poster, class: "col-12", local: true do |f| %>
+      
+          <%= f.label :link, t(".link") %>
+          <%= f.text_field :link, class: "form-control mt-1 mb-2" %>
+          
+          <%= f.submit yield(:button_text), class: "btn btn-primary mt-3 mb-5" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
