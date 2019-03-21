@@ -3,7 +3,6 @@ class User < ApplicationRecord
   PHONENUMBER_REGEX = /[0-9]{3}-[0-9]{3}-[0-9]{4}/
   SIGNUP_PARAMS = %i(name email phone password password_confirmation).freeze
   attr_accessor :remember_token
-  has_many :schedules, through: :tickets
   has_many :tickets
 
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
@@ -54,7 +53,7 @@ class User < ApplicationRecord
   end
 
   private
-
+  
   def downcase_email
     email.downcase!
   end

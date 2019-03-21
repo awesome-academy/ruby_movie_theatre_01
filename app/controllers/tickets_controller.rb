@@ -42,6 +42,6 @@ class TicketsController < ApplicationController
 
   def tinh_tien
     current_user.update(wallet: current_user.wallet -
-                          (params["positions"].length * 50000))
+                          (params["positions"].length * 50_000))
   end
 end
